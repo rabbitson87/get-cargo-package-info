@@ -14,7 +14,7 @@ inputs:
   package:
     description: 'Put in the keys'
     default: ''
-oupputs:
+outputs:
   object:
     description: 'The object with the keys'
 runs:

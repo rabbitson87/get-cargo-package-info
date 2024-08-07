@@ -3,7 +3,7 @@
 [![GitHub
 release](https://img.shields.io/github/release/rabbitson87/get-cargo-package-info.svg?style=flat-square)](https://github.com/rabbitson87/get-cargo-package-info/releases/latest)
 [![GitHub
-marketplace](https://img.shields.io/badge/marketplace-create--env--file-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/get-cargo-package-info)
+marketplace](https://img.shields.io/badge/marketplace-get--cargo--package--info-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/get-info-cargo-toml-file)
 [![Licence](https://img.shields.io/github/license/rabbitson87/get-cargo-package-info)](https://github.com/rabbitson87/get-cargo-package-info/blob/main/LICENSE)
 
 ## About
@@ -32,9 +32,9 @@ jobs:
     steps:
     - name: Get package info
       id: info
-      uses: rabbitson87/get-cargo-package-info@v1.0
+      uses: rabbitson87/get-cargo-package-info@v1.0.0
       with:
-        file_name: .env
+        file_name: Cargo.toml
         directory: <directory_name>
         package: |
           name
@@ -91,14 +91,14 @@ jobs:
     steps:
     - name: Get package info
       id: info
-      uses: rabbitson87/get-cargo-package-info@v1.0
+      uses: rabbitson87/get-cargo-package-info@v1.0.0
       with:
         package: |
           version
 
     - name: Use output
       shell: bash
-      run: echo "version is ${{ steps.info.object.package.version }}"
+      run: echo "version is ${{ steps.info.outputs.object.package.version }}"
 ```
 
 ## Potential Issues

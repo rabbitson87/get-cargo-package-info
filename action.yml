@@ -1,0 +1,19 @@
+name: 'Get info Cargo.toml file'
+description: 'Github Action to get info in a Cargo.toml file'
+author: 'Rabbitson'
+branding:
+  icon: 'briefcase'
+  color: 'gray-dark'
+inputs:
+  file_name:
+    description: 'The filename for the Cago.toml'
+    default: 'Cargo.toml'
+  directory:
+    description: 'The directory to read the Cago.toml in'
+    default: ''
+  package:
+    description: 'Put in the keys'
+    default: ''
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

@@ -68,10 +68,11 @@ async function run(): Promise<void> {
       }
     })
 
+    core.info(JSON.stringify(object, undefined, 2))
     core.setOutput('object', JSON.stringify(object, undefined, 2))
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }
 }
 
-// void run()
+void run()

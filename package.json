@@ -1,6 +1,6 @@
 {
   "name": "get-cargo-package-info",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "description": "Github Action to get info in a Cargo.toml file",
   "main": "lib/main.js",

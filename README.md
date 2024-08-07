@@ -98,7 +98,7 @@ jobs:
 
     - name: Use output
       shell: bash
-      run: echo "version is ${{ steps.info.outputs.object.package.version }}"
+      run: echo "version is ${{ fromJson(steps.info.outputs.object).package.version }}"
 ```
 
 ## Potential Issues

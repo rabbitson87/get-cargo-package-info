@@ -95,6 +95,7 @@ async function run() {
                 };
             }
         });
+        core.info(JSON.stringify(object, undefined, 2));
         core.setOutput('object', JSON.stringify(object, undefined, 2));
     }
     catch (error) {
@@ -102,7 +103,7 @@ async function run() {
             core.setFailed(error.message);
     }
 }
-// void run()
+void run();
 
 
 /***/ }),

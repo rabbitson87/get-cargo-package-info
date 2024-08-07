@@ -32,7 +32,7 @@ jobs:
     steps:
     - name: Get package info
       id: info
-      uses: rabbitson87/get-cargo-package-info@v1.0.0
+      uses: rabbitson87/get-cargo-package-info@v1
       with:
         file_name: Cargo.toml
         directory: <directory_name>
@@ -91,7 +91,7 @@ jobs:
     steps:
     - name: Get package info
       id: info
-      uses: rabbitson87/get-cargo-package-info@v1.0.0
+      uses: rabbitson87/get-cargo-package-info@v1
       with:
         package: |
           version

@@ -14,6 +14,9 @@ inputs:
   package:
     description: 'Put in the keys'
     default: ''
+oupputs:
+  object:
+    description: 'The object with the keys'
 runs:
   using: 'node20'
   main: 'dist/index.js'
